@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { ProductOption, ProductColor, Size } from '../types/product';
+import { ProductOption, ProductColor, Size } from '@/types/product';
 
 interface ProductDisplayProps {
   product: ProductOption | null;
