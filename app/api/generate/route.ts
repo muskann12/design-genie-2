@@ -22,15 +22,9 @@ export async function POST(req: Request) {
     const response = await client.images.generate({
       model: "black-forest-labs/flux-schnell",
       response_format: "url",
-      extra_body: {
-        response_extension: "webp",
-        width: 512,
-        height: 512,
-        num_inference_steps: 28,
-        negative_prompt: "",
-        seed: -1
-      },
       prompt: prompt,
+      // If you need additional parameters, you can include them directly here.
+      // For example, width, height, and other options should be directly supported.
     });
 
     return NextResponse.json({ imageUrl: response.data[0].url });
