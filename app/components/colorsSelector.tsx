@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ProductColor } from '../types/product';
+import { ProductColor } from '@/types/product';
 import { cn } from '@/lib/utils';
 
 interface ColorSelectorProps {
